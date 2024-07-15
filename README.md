@@ -1,8 +1,8 @@
 - 👋 Hi, I’m Oliver
-- 👀 I’m interested in web3, applied ethics, climate, and much more!
-- 🌱 I’m currently building a solarpunk future with the Dream DAO.
-- 💞️ I’m looking to collaborate on regenerating the world through storytelling.
-- 📫 reach me on Telegram @oliveryehlik
+- 👀 I’m interested in restorative justice, tech ethics, climate, and much more!
+- 🌱 Recently graduated with an Interdisciplinary Studies major
+- 💞️ I’m looking to collaborate on skillbuilding with climate activists
+- 📫 Find me online and I'd love to connect!
 
 <!---
 oliveryehlik/oliveryehlik is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
