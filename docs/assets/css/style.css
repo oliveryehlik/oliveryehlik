@@ -1,4 +1,18 @@
 
+/* Container: Sets size limit and centers on desktop */
+.image-wrapper {
+  max-width: 450px;    /* Stops image from getting too large on big screens */
+  margin: 1.5rem auto; /* Adds top/bottom space and centers left/right */
+}
+
+/* Image: Scales fluidly to fit inside the wrapper */
+.image-wrapper img {
+  width: 100%;        /* Makes image fill 100% of the wrapper width */
+  height: auto;       /* Keeps photo from stretching or distorting */
+  display: block;     /* Removes weird gap under the photo */
+  border-radius: 8px; /* Adds soft rounded corners */
+}
+
 /* Responsive Image Styling */
 .responsive-img {
   max-width: 100%; /* Prevents the image from overflowing its container */
