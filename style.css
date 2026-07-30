@@ -1,0 +1,23 @@
+/* Layout & basic styling */
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 1.5rem;
+  color: #222;
+}
+
+/* Fluid responsive typography */
+h1 {
+  font-size: clamp(2rem, 5vw + 1rem, 3.5rem);
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: clamp(1.4rem, 3vw + 0.8rem, 2rem);
+}
+
+p, li {
+  font-size: clamp(1rem, 1vw + 0.8rem, 1.2rem);
+}
