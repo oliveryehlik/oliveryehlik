@@ -1,4 +1,9 @@
 
+/* Adds spacing below main content to separate it from the footer */
+main {
+  margin-bottom: 4rem;
+}
+
 /* Navigation Styling */
 .site-nav {
   display: flex;
