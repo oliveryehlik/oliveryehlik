@@ -1,30 +1,17 @@
-
-/* Footer colored block */
-footer {
-  background-color:var(--sunflower-gold);
-  color: #000000;
-  padding: 2rem 1rem;                        /* Space inside the block (top/bottom, left/right) */
-  text-align: center;                        /* Centers the copyright text */
-  border-radius: 8px;                        /* Adds soft rounded corners */
-}
-
-/* Target paragraphs specifically inside the footer */
-footer p {
-  color: var(--alice-blue);
-  margin: 0; /* Optional: cleans up default paragraph margin inside the block */
-}
-
-/* Adds spacing below main content to separate it from the footer */
-main {
-  margin-bottom: 4rem;
+/* Color Palette */
+:root {
+  --alice-blue: #EEF5FBff;        /* Background color for webpage */
+  --spicy-paprika: #CE603Bff;     /* Title and header color */
+  --sunflower-gold: #ffba49ff;    /* Accent color and footer */
+  --cerulean: #086788ff;          /* Links */
 }
 
 /* Navigation Styling */
 .site-nav {
   display: flex;
-  gap: 1.5rem;          /* Spaces links evenly */
+  gap: 1.5rem;
   padding: 1rem 0;
-  border-bottom: 1px solid #ccc; /* Adds a clean divider below the nav */
+  border-bottom: 1px solid #ccc;
   margin-bottom: 2rem;
 }
 
@@ -33,34 +20,9 @@ main {
   font-weight: bold;
 }
 
-/* Container: Sets size limit and centers on desktop */
-.image-wrapper {
-  max-width: 450px;    /* Stops image from getting too large on big screens */
-  margin: 1.5rem auto; /* Adds top/bottom space and centers left/right */
-}
-
-/* Image: Scales fluidly to fit inside the wrapper */
-.image-wrapper img {
-  width: 100%;        /* Makes image fill 100% of the wrapper width */
-  height: auto;       /* Keeps photo from stretching or distorting */
-  display: block;     /* Removes weird gap under the photo */
-  border-radius: 8px; /* Adds soft rounded corners */
-}
-
-/* Responsive Image Styling */
-.responsive-img {
-  max-width: 100%; /* Prevents the image from overflowing its container */
-  height: auto;     /* Maintains aspect ratio automatically as width shrinks */
-  display: block;   /* Removes default inline whitespace bottom gap */
-  border-radius: 8px; /* Optional: Adds subtle rounded corners matching modern layouts */
-}
-
-/* Color Palette Variables */
-:root {
-  --alice-blue: #EEF5FBff;
-  --spicy-paprika: #CE603Bff;
-  --sunflower-gold: #ffba49ff;
-  --cerulean: #086788ff;
+/* Main Body */
+main {
+  margin-bottom: 4rem;
 }
 
 /* Base Styles */
@@ -92,7 +54,7 @@ p, li {
   color: #000000;
 }
 
-/* Links & Interactive Elements */
+/* Links */
 a {
   font-size: clamp(1rem, 1vw + 0.8rem, 1.2rem);
   color: var(--cerulean);
@@ -101,4 +63,41 @@ a {
 
 a:hover {
   color: var(--spicy-paprika);
+}
+
+/* Footer Text Block */
+footer {
+  background-color:var(--sunflower-gold);
+  color: #000000;
+  padding: 2rem 1rem;                       
+  text-align: center;                       
+  border-radius: 8px;
+}
+
+/* Paragraph Text In Footer */
+footer p {
+  color: #000000;
+  margin: 0;
+}
+
+/* Container for centered, fixed-width images */
+.image-wrapper {
+  max-width: 450px;   
+  margin: 1.5rem auto;
+}
+
+/* Image inside the wrapper */
+.image-wrapper img {
+  width: 100%;        
+  height: auto;     
+  display: block;    
+  border-radius: 8px;
+}
+
+/* Standalone image style */
+.responsive-img {
+  max-width: 100%;    
+  height: auto;       
+  display: block;    
+  border-radius: 8px;
 }
