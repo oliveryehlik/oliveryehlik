@@ -66,6 +66,7 @@ a:hover {
   color: var(--spicy-paprika);
 }
 
+/* IGNORE THIS ELEMENT
 /* Footer Text Block */
 footer {
   background-color:var(--sunflower-gold);
@@ -80,6 +81,7 @@ footer p {
   color: #000000;
   margin: 0;
 }
+*/
 
 /* Container for centered, fixed-width images */
 .image-wrapper {
