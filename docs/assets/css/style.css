@@ -6,11 +6,7 @@ footer {
   padding: 2rem 1rem;                        /* Space inside the block (top/bottom, left/right) */
   margin-top: 4rem;                          /* Space above the block to push it away from content */
   text-align: center;                        /* Centers the copyright text */
-}
-
-/* Optional: Ensures links inside the footer are readable on dark backgrounds */
-footer a {
-  color: #88c0d0;
+  border-radius: 8px;                        /* Adds soft rounded corners */
 }
 
 /* Adds spacing below main content to separate it from the footer */
