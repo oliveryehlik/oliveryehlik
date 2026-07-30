@@ -26,6 +26,7 @@
   --alice-blue: #EEF5FBff;
   --spicy-paprika: #CE603Bff;
   --night-bordeaux: #580c1fff;
+  --cerulean: #086788ff;
 }
 
 /* Base Styles */
@@ -59,7 +60,7 @@ p, li {
 
 /* Links & Interactive Elements */
 a {
-  color: var(--night-bordeaux);
+  color: var(--cerulean);
   text-decoration: underline;
   transition: color 0.2s ease;
 }
