@@ -1,3 +1,4 @@
+
 /* Color Palette Variables */
 :root {
   --midnight-violet: #241023; /* Deep dark background */
@@ -7,35 +8,55 @@
   --sage-green: #698f3f;      /* Secondary highlights / links */
 }
 
-/* Midnight Violet background with crisp white text for max readability */
-  background-color: var(--midnight-violet);
-  color: #ffffff;
-}
-
-/* Layout & basic styling */
+/* Base Styles */
 body {
   font-family: system-ui, -apple-system, sans-serif;
   line-height: 1.6;
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 800px;
   padding: 1.5rem;
-  color: #222;
+  
+  /* Midnight Violet background with crisp white text for max readability */
+  background-color: var(--midnight-violet);
+  color: #ffffff;
 }
 
-/* Fluid responsive typography */
+/* Headings */
 h1 {
   font-size: clamp(2rem, 5vw + 1rem, 3.5rem);
   line-height: 1.2;
-  color: #f0f0f0;
+  color: var(--lime-cream); /* Pops brightly off the dark background */
 }
 
 h2 {
   font-size: clamp(1.4rem, 3vw + 0.8rem, 2rem);
+  color: #ffffff;
+  border-bottom: 2px solid var(--dark-garnet); /* Dark Garnet underline accent */
+  padding-bottom: 0.3rem;
+}
+
+/* Body Text */
+p, li {
+  font-size: clamp(1rem, 1vw + 0.8rem, 1.2rem);
   color: #f0f0f0;
 }
 
-p, li {
-  font-size: clamp(1rem, 1vw + 0.8rem, 1.2rem);
-   color: #f0f0f0;
+/* Links & Interactive Elements */
+a {
+  color: var(--lime-cream);
+  text-decoration: underline;
+  transition: color 0.2s ease;
 }
- 
+
+a:hover {
+  color: var(--sage-green);
+}
+
+/* Code Snippets / Highlight Boxes */
+code {
+  background-color: var(--dark-garnet);
+  color: var(--lime-cream);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
