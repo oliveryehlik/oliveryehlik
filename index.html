@@ -3,30 +3,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <!-- Critical for mobile scaling -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Oliver Yehlik</title>
+
+  <style>
+    /* Basic layout to keep text readable on desktop */
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+      margin: 0 auto;
+      max-width: 800px; /* Limits width on big screens */
+      padding: 1.5rem;  /* Keeps text away from phone screen edges */
+      color: #222;
+    }
+
+    /* Fluid text sizes using clamp(minimum, preferred, maximum) */
+    h1 {
+      font-size: clamp(2rem, 5vw + 1rem, 3.5rem);
+      line-height: 1.2;
+    }
+
+    h2 {
+      font-size: clamp(1.4rem, 3vw + 0.8rem, 2rem);
+    }
+
+    p, li {
+      font-size: clamp(1rem, 1vw + 0.8rem, 1.2rem);
+    }
+  </style>
 </head>
 <body>
 
-<!-- Main Title -->
-  <h1>Welcome to My Website</h1>
+  <h1>Oliver Yehlik</h1>
+  <p>This text automatically scales nicely whether you are on a phone or a desktop screen!</p>
 
-  <!-- Short Intro Paragraph -->
-  <p>This is a quick intro about what this page is for.</p>
+  <h2>About This Page</h2>
+  <p>Add whatever text, images, or links you want down here.</p>
 
-  <!-- Subheading -->
-  <h2>About Me</h2>
-  <p>A little bit of detail goes here. You can add more paragraphs whenever you need.</p>
-
-  <!-- Subheading for a List -->
-  <h2>My Favorite Things</h2>
-  <ul>
-    <li>Coffee</li>
-    <li>Cheesecake</li>
-    <li>Music</li>
-  </ul>
-
-  <!-- External Link -->
-  <p>Check out my <a href="https://www.linkedin.com/in/oliver-yehlik/">LinkedIn</a>.</p>
-  
 </body>
 </html>
