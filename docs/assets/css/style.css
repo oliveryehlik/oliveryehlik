@@ -1,4 +1,12 @@
 
+/* Responsive Image Styling */
+.responsive-img {
+  max-width: 100%; /* Prevents the image from overflowing its container */
+  height: auto;     /* Maintains aspect ratio automatically as width shrinks */
+  display: block;   /* Removes default inline whitespace bottom gap */
+  border-radius: 8px; /* Optional: Adds subtle rounded corners matching modern layouts */
+}
+
 /* Color Palette Variables */
 :root {
   --alice-blue: #EEF5FBff;
