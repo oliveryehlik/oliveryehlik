@@ -13,31 +13,31 @@ body {
   margin: 0 auto;
   max-width: 600px;
   padding: 1.5rem;
-  background-color: var(--clay-soil);
-  color: var(--alice-blue);
+  background-color: var(--alice-blue);
+  color: #000000;
 }
 
 /* Headings */
 h1 {
   font-size: clamp(2rem, 5vw + 1rem, 3.5rem);
   line-height: 1.2;
-  color: var(--spicy-paprika); /* Pops brightly off the dark background */
+  color: var(--spicy-paprika);
 }
 
 h2 {
   font-size: clamp(1.4rem, 3vw + 0.8rem, 2rem);
-  color: var(--alice-blue);
+  color: #000000);
 }
 
 /* Body */
 p, li {
   font-size: clamp(1rem, 1vw + 0.8rem, 1.2rem);
-  color: var(--alice-blue);
+  color: #000000;
 }
 
 /* Links & Interactive Elements */
 a {
-  color: var(--alice-blue);
+  color: #000000;
   text-decoration: underline;
   transition: color 0.2s ease;
 }
