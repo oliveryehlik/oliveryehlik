@@ -66,8 +66,7 @@ a:hover {
   color: var(--spicy-paprika);
 }
 
-/* IGNORE THIS ELEMENT
-/* Footer Text Block */
+/* IGNORE Footer text box and paragraph text
 footer {
   background-color:var(--sunflower-gold);
   color: #000000;
@@ -76,7 +75,6 @@ footer {
   border-radius: 8px;
 }
 
-/* Paragraph Text In Footer */
 footer p {
   color: #000000;
   margin: 0;
