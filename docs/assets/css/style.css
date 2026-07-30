@@ -4,9 +4,14 @@ footer {
   background-color:var(--night-bordeaux);    /* Dark background color (change to match your palette) */
   color: var(--alice-blue);                  /* Light text color for contrast */
   padding: 2rem 1rem;                        /* Space inside the block (top/bottom, left/right) */
-  margin-top: 4rem;                          /* Space above the block to push it away from content */
   text-align: center;                        /* Centers the copyright text */
   border-radius: 8px;                        /* Adds soft rounded corners */
+}
+
+/* Target paragraphs specifically inside the footer */
+footer p {
+  color: var(--alice-blue);
+  margin: 0; /* Optional: cleans up default paragraph margin inside the block */
 }
 
 /* Adds spacing below main content to separate it from the footer */
@@ -78,7 +83,7 @@ h1 {
 
 h2 {
   font-size: clamp(1.4rem, 3vw + 0.8rem, 2rem);
-  color: #000000);
+  color: #000000;
 }
 
 /* Body */
