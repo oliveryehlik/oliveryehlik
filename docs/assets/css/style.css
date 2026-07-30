@@ -1,8 +1,8 @@
 
 /* Footer colored block */
 footer {
-  background-color:var(--night-bordeaux);    /* Dark background color (change to match your palette) */
-  color: var(--alice-blue);                  /* Light text color for contrast */
+  background-color:var(--sunflower-gold);
+  color: #000000;
   padding: 2rem 1rem;                        /* Space inside the block (top/bottom, left/right) */
   text-align: center;                        /* Centers the copyright text */
   border-radius: 8px;                        /* Adds soft rounded corners */
@@ -59,7 +59,7 @@ main {
 :root {
   --alice-blue: #EEF5FBff;
   --spicy-paprika: #CE603Bff;
-  --night-bordeaux: #580c1fff;
+  --sunflower-gold: #ffba49ff;
   --cerulean: #086788ff;
 }
 
