@@ -1,11 +1,9 @@
 
 /* Color Palette Variables */
 :root {
-  --mahogany-red: #bf211eff;
-  --golden-glow: #e9ce2cff;
-  --royal-gold: #f9dc5cff;
-  --lime-cream: #e5f993ff;
-  --muted-teal: #69a197ff;
+  --alice-blue: #EEF5FBff;
+  --spicy-paprika: #CE603Bff;
+  --clay-soil: #72463Bff;
 }
 
 /* Base Styles */
@@ -15,35 +13,35 @@ body {
   margin: 0 auto;
   max-width: 600px;
   padding: 1.5rem;
-  background-color: var(--mahogany-red);
-  color: #ffffff;
+  background-color: var(--clay-soil);
+  color: var(--alice-blue);
 }
 
 /* Headings */
 h1 {
   font-size: clamp(2rem, 5vw + 1rem, 3.5rem);
   line-height: 1.2;
-  color: var(--lime-cream); /* Pops brightly off the dark background */
+  color: var(--spicy-paprika); /* Pops brightly off the dark background */
 }
 
 h2 {
   font-size: clamp(1.4rem, 3vw + 0.8rem, 2rem);
-  color: #ffffff;
+  color: var(--alice-blue);
 }
 
 /* Body */
 p, li {
   font-size: clamp(1rem, 1vw + 0.8rem, 1.2rem);
-  color: #f0f0f0;
+  color: var(--alice-blue);
 }
 
 /* Links & Interactive Elements */
 a {
-  color: var(--lime-cream);
+  color: var(--alice-blue);
   text-decoration: underline;
   transition: color 0.2s ease;
 }
 
 a:hover {
-  color: var(--royal-gold);
+  color: var(--spicy-paprika);
 }
