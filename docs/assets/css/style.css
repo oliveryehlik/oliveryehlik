@@ -66,20 +66,16 @@ a:hover {
   color: var(--spicy-paprika);
 }
 
-/* IGNORE Footer text box and paragraph text
-footer {
-  background-color:var(--sunflower-gold);
-  color: #000000;
-  padding: 2rem 1rem;                       
+/* Footer text box */
+footer {                      
   text-align: center;                       
-  border-radius: 8px;
 }
 
+/* Footer Paragraph Text */
 footer p {
   color: #000000;
   margin: 0;
 }
-*/
 
 /* Container for centered, fixed-width images */
 .image-wrapper {
