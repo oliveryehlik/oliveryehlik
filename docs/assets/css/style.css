@@ -74,6 +74,7 @@ p, li {
 
 /* Links & Interactive Elements */
 a {
+  font-size: clamp(1rem, 1vw + 0.8rem, 1.2rem);
   color: var(--cerulean);
   text-decoration: underline;
   transition: color 0.2s ease;
