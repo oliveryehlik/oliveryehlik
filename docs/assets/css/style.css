@@ -1,4 +1,18 @@
 
+/* Navigation Styling */
+.site-nav {
+  display: flex;
+  gap: 1.5rem;          /* Spaces links evenly */
+  padding: 1rem 0;
+  border-bottom: 1px solid #ccc; /* Adds a clean divider below the nav */
+  margin-bottom: 2rem;
+}
+
+.site-nav a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
 /* Container: Sets size limit and centers on desktop */
 .image-wrapper {
   max-width: 450px;    /* Stops image from getting too large on big screens */
