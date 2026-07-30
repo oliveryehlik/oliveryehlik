@@ -1,9 +1,9 @@
 /* Color Palette */
 :root {
-  --alice-blue: #EEF5FBff;        /* Background color for webpage */
-  --spicy-paprika: #CE603Bff;     /* Title and header color */
-  --sunflower-gold: #ffba49ff;    /* Accent color and footer */
-  --cerulean: #086788ff;          /* Links */
+  --alice-blue: #EEF5FB;        /* Background color for webpage */
+  --spicy-paprika: #CE603B;     /* Title and header color */
+  --sunflower-gold: #ffba49;    /* Accent color and footer */
+  --cerulean: #086788;          /* Links */
 }
 
 /* Navigation Styling */
@@ -58,6 +58,7 @@ p, li {
 a {
   font-size: clamp(1rem, 1vw + 0.8rem, 1.2rem);
   color: var(--cerulean);
+  text-decoration: none;
   transition: color 0.2s ease;
 }
 
