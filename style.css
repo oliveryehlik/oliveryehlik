@@ -1,9 +1,23 @@
+/* Color Palette Variables */
+:root {
+  --midnight-violet: #241023; /* Deep dark background */
+  --dark-garnet: #6b0504;     /* Rich garnet accent / containers */
+  --rust-brown: #a3320b;      /* Warm secondary accent */
+  --lime-cream: #d5e68d;      /* High-contrast text / primary highlights */
+  --sage-green: #698f3f;      /* Secondary highlights / links */
+}
+
+/* Midnight Violet background with crisp white text for max readability */
+  background-color: var(--midnight-violet);
+  color: #ffffff;
+}
+
 /* Layout & basic styling */
 body {
   font-family: system-ui, -apple-system, sans-serif;
   line-height: 1.6;
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 600px;
   padding: 1.5rem;
   color: #222;
 }
@@ -12,12 +26,16 @@ body {
 h1 {
   font-size: clamp(2rem, 5vw + 1rem, 3.5rem);
   line-height: 1.2;
+  color: #f0f0f0;
 }
 
 h2 {
   font-size: clamp(1.4rem, 3vw + 0.8rem, 2rem);
+  color: #f0f0f0;
 }
 
 p, li {
   font-size: clamp(1rem, 1vw + 0.8rem, 1.2rem);
+   color: #f0f0f0;
 }
+ 
