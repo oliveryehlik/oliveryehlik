@@ -1,11 +1,11 @@
 
 /* Color Palette Variables */
 :root {
-  --midnight-violet: #241023; /* Deep dark background */
-  --dark-garnet: #6b0504;     /* Rich garnet accent / containers */
-  --rust-brown: #a3320b;      /* Warm secondary accent */
-  --lime-cream: #d5e68d;      /* High-contrast text / primary highlights */
-  --sage-green: #698f3f;      /* Secondary highlights / links */
+  --mahogany-red: #bf211eff;
+  --golden-glow: #e9ce2cff;
+  --royal-gold: #f9dc5cff;
+  --lime-cream: #e5f993ff;
+  --muted-teal: #69a197ff;
 }
 
 /* Base Styles */
@@ -15,9 +15,7 @@ body {
   margin: 0 auto;
   max-width: 600px;
   padding: 1.5rem;
-  
-  /* Midnight Violet background with crisp white text for max readability */
-  background-color: var(--midnight-violet);
+  background-color: var(--mahogany-red);
   color: #ffffff;
 }
 
@@ -33,7 +31,7 @@ h2 {
   color: #ffffff;
 }
 
-/* Body Text */
+/* Body */
 p, li {
   font-size: clamp(1rem, 1vw + 0.8rem, 1.2rem);
   color: #f0f0f0;
@@ -47,14 +45,5 @@ a {
 }
 
 a:hover {
-  color: var(--sage-green);
-}
-
-/* Code Snippets / Highlight Boxes */
-code {
-  background-color: var(--dark-garnet);
-  color: var(--lime-cream);
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-  font-size: 0.9em;
+  color: var(--royal-gold);
 }
