@@ -58,7 +58,7 @@ p, li {
 a {
   font-size: clamp(1rem, 1vw + 0.8rem, 1.2rem);
   color: var(--cerulean);
-  text-decoration: none;
+  text-decoration: underline;
   transition: color 0.2s ease;
 }
 
