@@ -25,7 +25,7 @@
 :root {
   --alice-blue: #EEF5FBff;
   --spicy-paprika: #CE603Bff;
-  --clay-soil: #72463Bff;
+  --night-bordeaux: #580c1fff;
 }
 
 /* Base Styles */
@@ -59,7 +59,7 @@ p, li {
 
 /* Links & Interactive Elements */
 a {
-  color: #000000;
+  color: var(--night-bordeaux);
   text-decoration: underline;
   transition: color 0.2s ease;
 }
