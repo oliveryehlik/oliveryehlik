@@ -13,7 +13,7 @@ body {
   font-family: system-ui, -apple-system, sans-serif;
   line-height: 1.6;
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 600px;
   padding: 1.5rem;
   
   /* Midnight Violet background with crisp white text for max readability */
@@ -31,8 +31,6 @@ h1 {
 h2 {
   font-size: clamp(1.4rem, 3vw + 0.8rem, 2rem);
   color: #ffffff;
-  border-bottom: 2px solid var(--dark-garnet); /* Dark Garnet underline accent */
-  padding-bottom: 0.3rem;
 }
 
 /* Body Text */
