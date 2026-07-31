@@ -81,11 +81,11 @@ blockquote cite {
   margin-top: 0.5rem;
   font-size: 0.875rem;
   font-style: normal;
-  color: var(--cerulean);
+  color: #000000
 }
 
 blockquote cite a {
-  color: var(--cerulean);        
+  color: #000000;        
   text-decoration: none; 
 }
 
