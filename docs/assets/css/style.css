@@ -5,6 +5,10 @@
   --sunflower-gold: #ffba49;    /* Accent color and footer */
   --yellow-green: #b7ce63;      
   --cerulean: #086788;          /* Links */
+  --vanilla-custard: #f2f3ae;
+  --light-gold: #edd382;
+  --sandy-brown: #fc9e4f;
+
 }
 
 /* Navigation Styling */
@@ -38,7 +42,7 @@ body {
   margin: 0 auto;
   max-width: 600px;
   padding: 1.5rem;
-  background-color: var(--alice-blue);
+  background-color: var(--vanilla-custard);
   color: #000000;
 }
 
@@ -46,7 +50,7 @@ body {
 h1 {
   font-size: clamp(2rem, 5vw + 1rem, 3.5rem);
   line-height: 1.2;
-  color: var(--spicy-paprika);
+  color: var(--sandy-brown);
 }
 
 h2 {
@@ -69,12 +73,12 @@ a {
 }
 
 a:hover {
-  color: var(--spicy-paprika);
+  color: var(--sandy-brown);
 }
 
 /* Blockquotes */
 blockquote {
-  background-color: var(--yellow-green); /* Background color behind text */
+  background-color: var(--light-gold); /* Background color behind text */
   font-size: clamp(1rem, 1vw + 0.8rem, 1.2rem);
   border-radius: 8px;                      /* Simple rounded corners */
   padding: 1rem 1.25rem;                   /* Inner spacing around text */
@@ -98,7 +102,7 @@ blockquote cite a {
 
 blockquote cite a:hover {
   text-decoration: underline;
-  color: var(--spicy-paprika);
+  color: var(--sandy-brown);
 }
 
 /* Footer text box */
