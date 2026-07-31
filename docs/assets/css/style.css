@@ -2,14 +2,8 @@
 :root {
   --alice-blue: #EEF5FB;        /* Background color for webpage */
   --spicy-paprika: #CE603B;     /* Title and header color */
-  --sunflower-gold: #ffba49;    /* Accent color and footer */
-  --yellow-green: #b7ce63;      
+  --dark-teal: #02394a;
   --cerulean: #086788;          /* Links */
-  --vanilla-custard: #f2f3ae;
-  --light-gold: #edd382;
-  --sandy-brown: #fc9e4f;
-  --azure-mist: #d7eae8;
-
 }
 
 /* Navigation Styling */
@@ -43,7 +37,7 @@ body {
   margin: 0 auto;
   max-width: 600px;
   padding: 1.5rem;
-  background-color: var(--azure-mist);
+  background-color: var(--alice-blue);
   color: #000000;
 }
 
@@ -51,7 +45,7 @@ body {
 h1 {
   font-size: clamp(2rem, 5vw + 1rem, 3.5rem);
   line-height: 1.2;
-  color: var(--sandy-brown);
+  color: var(--spicy-paprika);
 }
 
 h2 {
@@ -74,17 +68,17 @@ a {
 }
 
 a:hover {
-  color: var(--sandy-brown);
+  color: var(--spicy-paprika);
 }
 
 /* Blockquotes */
 blockquote {
-  background-color: var(--light-gold); /* Background color behind text */
+  background-color: var(--dark-teal); /* Background color behind text */
   font-size: clamp(1rem, 1vw + 0.8rem, 1.2rem);
   border-radius: 8px;                      /* Simple rounded corners */
   padding: 1rem 1.25rem;                   /* Inner spacing around text */
   margin: 1rem 0;                          /* Outer spacing top/bottom */
-  color: #000000;                          /* Text color */
+  color: #ffffff;
   font-style: normal;
 }
 
@@ -103,7 +97,7 @@ blockquote cite a {
 
 blockquote cite a:hover {
   text-decoration: underline;
-  color: var(--sandy-brown);
+  color: var(--spicy-paprika);
 }
 
 /* Footer text box */
