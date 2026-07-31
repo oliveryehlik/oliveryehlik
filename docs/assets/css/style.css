@@ -2,7 +2,7 @@
 :root {
   --spicy-paprika: #CE603B;     /* Title and header color */
   --white-smoke: #f5f5f5;
-  --graphite: #41393f;
+  --gunmetal: #3d3d3d;
   --cerulean: #086788;          /* Links */
 }
 
@@ -73,7 +73,7 @@ a:hover {
 
 /* Blockquotes */
 blockquote {
-  background-color: var(--graphite); /* Background color behind text */
+  background-color: var(--gunmetal); /* Background color behind text */
   font-size: clamp(1rem, 1vw + 0.8rem, 1.2rem);
   border-radius: 8px;                      /* Simple rounded corners */
   padding: 1rem 1.25rem;                   /* Inner spacing around text */
