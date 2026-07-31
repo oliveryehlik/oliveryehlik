@@ -66,6 +66,14 @@ a:hover {
   color: var(--spicy-paprika);
 }
 
+blockquote {
+  background-color: var(--sunflower-gold); /* Background color behind text */
+  border-radius: 8px;                      /* Simple rounded corners */
+  padding: 1rem 1.25rem;                   /* Inner spacing around text */
+  margin: 1rem 0;                          /* Outer spacing top/bottom */
+  color: #000000;                          /* Text color */
+}
+
 /* Footer text box */
 footer {                      
   text-align: center;                       
