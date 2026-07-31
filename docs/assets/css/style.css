@@ -74,7 +74,7 @@ blockquote {
   padding: 1rem 1.25rem;                   /* Inner spacing around text */
   margin: 1rem 0;                          /* Outer spacing top/bottom */
   color: #000000;                          /* Text color */
-  font-style: italic;
+  font-style: normal;
 }
 
 blockquote cite {
