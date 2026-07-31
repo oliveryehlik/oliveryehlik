@@ -69,6 +69,7 @@ a:hover {
 /* Blockquotes */
 blockquote {
   background-color: var(--sunflower-gold); /* Background color behind text */
+  font-size: clamp(1rem, 1vw + 0.8rem, 1.2rem);
   border-radius: 8px;                      /* Simple rounded corners */
   padding: 1rem 1.25rem;                   /* Inner spacing around text */
   margin: 1rem 0;                          /* Outer spacing top/bottom */
