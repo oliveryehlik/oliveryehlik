@@ -87,17 +87,21 @@ blockquote cite {
   margin-top: 0.5rem;
   font-size: 0.875rem;
   font-style: normal;
-  color: #000000
+  color: #ffffff
 }
 
 blockquote cite a {
-  color: #000000;        
+  color: #ffffff;        
   text-decoration: none; 
 }
 
 blockquote cite a:hover {
   text-decoration: underline;
   color: var(--spicy-paprika);
+}
+
+blockquote p {
+  color: #ffffff;
 }
 
 /* Footer text box */
