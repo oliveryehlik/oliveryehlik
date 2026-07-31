@@ -3,6 +3,7 @@
   --alice-blue: #EEF5FB;        /* Background color for webpage */
   --spicy-paprika: #CE603B;     /* Title and header color */
   --sunflower-gold: #ffba49;    /* Accent color and footer */
+  --yellow-green: #b7ce63;      
   --cerulean: #086788;          /* Links */
 }
 
@@ -73,7 +74,7 @@ a:hover {
 
 /* Blockquotes */
 blockquote {
-  background-color: var(--sunflower-gold); /* Background color behind text */
+  background-color: var(--yellow-green); /* Background color behind text */
   font-size: clamp(1rem, 1vw + 0.8rem, 1.2rem);
   border-radius: 8px;                      /* Simple rounded corners */
   padding: 1rem 1.25rem;                   /* Inner spacing around text */
