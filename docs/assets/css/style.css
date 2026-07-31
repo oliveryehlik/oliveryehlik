@@ -74,7 +74,7 @@ a:hover {
 
 /* Blockquotes */
 blockquote {
-  background-color: var(--evergreen); /* Background color behind text */
+  background-color: var(--cerulean); /* Background color behind text */
   font-size: clamp(1rem, 1vw + 0.8rem, 1.2rem);
   border-radius: 8px;                      /* Simple rounded corners */
   padding: 1rem 1.25rem;                   /* Inner spacing around text */
