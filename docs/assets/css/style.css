@@ -66,12 +66,31 @@ a:hover {
   color: var(--spicy-paprika);
 }
 
+/* Blockquotes */
 blockquote {
   background-color: var(--sunflower-gold); /* Background color behind text */
   border-radius: 8px;                      /* Simple rounded corners */
   padding: 1rem 1.25rem;                   /* Inner spacing around text */
   margin: 1rem 0;                          /* Outer spacing top/bottom */
   color: #000000;                          /* Text color */
+}
+
+blockquote cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  font-style: normal;
+  color: var(--cerulean);
+}
+
+blockquote cite a {
+  color: var(--cerulean);        
+  text-decoration: none; 
+}
+
+blockquote cite a:hover {
+  text-decoration: underline;
+  color: var(--spicy-paprika);
 }
 
 /* Footer text box */
