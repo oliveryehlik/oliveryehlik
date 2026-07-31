@@ -2,8 +2,7 @@
 :root {
   --alice-blue: #EEF5FB;        /* Background color for webpage */
   --spicy-paprika: #CE603B;     /* Title and header color */
-  --evergreen: #283e2dff;
-  --espresso: #551b14ff;
+  --espresso: #551b14;
   --cerulean: #086788;          /* Links */
 }
 
@@ -74,7 +73,7 @@ a:hover {
 
 /* Blockquotes */
 blockquote {
-  background-color: var(--cerulean); /* Background color behind text */
+  background-color: var(--espresso); /* Background color behind text */
   font-size: clamp(1rem, 1vw + 0.8rem, 1.2rem);
   border-radius: 8px;                      /* Simple rounded corners */
   padding: 1rem 1.25rem;                   /* Inner spacing around text */
