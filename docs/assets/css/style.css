@@ -8,6 +8,7 @@
   --vanilla-custard: #f2f3ae;
   --light-gold: #edd382;
   --sandy-brown: #fc9e4f;
+  --azure-mist: #d7eae8;
 
 }
 
@@ -42,7 +43,7 @@ body {
   margin: 0 auto;
   max-width: 600px;
   padding: 1.5rem;
-  background-color: var(--vanilla-custard);
+  background-color: var(--azure-mist);
   color: #000000;
 }
 
