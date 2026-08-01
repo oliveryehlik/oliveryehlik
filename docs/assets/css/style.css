@@ -136,3 +136,21 @@ footer p {
   display: block;    
   border-radius: 8px;
 }
+
+.connect-table {
+  width: 100%;
+  max-width: 500px;
+  border-collapse: collapse;
+}
+
+.connect-table td {
+  padding: 12px 8px;
+  border-bottom: 1px solid #ccc;
+  word-break: break-word;
+}
+
+.connect-table td:first-child {
+  width: 100px;
+  padding-right: 15px;
+  vertical-align: middle;
+}
