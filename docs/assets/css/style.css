@@ -139,9 +139,10 @@ footer p {
 
 .connect-table {
   width: 100%;
-  max-width: 500px;
+  max-width: 450px;
   border-collapse: collapse;
   table-layout: fixed;
+  margin: 0 auto; /* Centers the table under the image */
 }
 
 .connect-table td {
