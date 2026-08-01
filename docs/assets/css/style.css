@@ -117,7 +117,7 @@ footer p {
 
 /* Container for centered, fixed-width images */
 .image-wrapper {
-  max-width: 450px;   
+  max-width: 500px;   
   margin: 1.5rem auto;
 }
 
@@ -137,28 +137,51 @@ footer p {
   border-radius: 8px;
 }
 
+
+/* Odd table things happening for contact info */
 .connect-table {
   width: 100%;
-  max-width: 450px;
+  max-width: 500px;
   border-collapse: collapse;
   table-layout: fixed;
-  margin: 0 auto; /* Centers the table under the image */
+  margin: 0 auto;
 }
 
-.connect-table td {
+/* 70/30 Column Ratio */
+.connect-table td:first-child {
   width: 70%;
+}
+
+.connect-table td:last-child {
+  width: 30%;
+}
+
+/* Base Cell Styling */
+.connect-table td {
   padding: 12px 8px;
   border-bottom: 1px solid #ccc;
   word-break: break-word;
   vertical-align: middle;
+  text-align: center;
+  box-sizing: border-box;
 }
 
-/* Mobile: Stack items vertically */
+/* Mobile: Stack items vertically with centered alignment */
 @media (max-width: 480px) {
-  .connect-table td {
+  .connect-table,
+  .connect-table tbody,
+  .connect-table tr {
     display: block;
     width: 100%;
-    padding: 6px 8px;
+  }
+
+  .connect-table td,
+  .connect-table td:first-child,
+  .connect-table td:last-child {
+    display: block;
+    width: 100%;
+    padding: 6px 0;
+    text-align: center;
   }
 
   .connect-table td:first-child {
