@@ -143,44 +143,38 @@ footer p {
   width: 100%;
   max-width: 500px;
   border-collapse: collapse;
-  table-layout: fixed;
+  table-layout: auto; /* Allows columns to dynamically adjust to text length */
   margin: 0 auto;
 }
 
-.connect-table td:first-child {
-  width: 75%;
-}
-
-.connect-table td:last-child {
-  width: 25%;
-}
-
 .connect-table td {
-  padding: 12px 8px;
+  padding: 8px 6px; /* Tighter padding for desktop */
   border-bottom: 1px solid #ccc;
-  word-break: break-word;
   vertical-align: middle;
   box-sizing: border-box;
+  white-space: nowrap;
 }
 
-/* Mobile: Stack items vertically with centered alignment */
+/* Expands first column to take up remaining space */
+.connect-table td:first-child {
+  width: 100%;
+}
+
+/* Squeezes second column to fit its exact content width */
+.connect-table td:last-child {
+  width: 1%;
+}
+
+/* Mobile: Keeps items side-by-side on a single line */
 @media (max-width: 480px) {
   .connect-table,
   .connect-table tbody,
   .connect-table tr {
-    display: block;
+    display: table;
     width: 100%;
   }
 
-  .connect-table td,
-  .connect-table td:first-child,
-  .connect-table td:last-child {
-    display: block;
-    width: 100%;
-    padding: 6px 0;
-  }
-
-  .connect-table td:first-child {
-    border-bottom: none;
+  .connect-table td {
+    padding: 6px 4px;
   }
 }
