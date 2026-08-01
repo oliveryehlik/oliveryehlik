@@ -148,11 +148,11 @@ footer p {
 }
 
 .connect-table td:first-child {
-  width: 70%;
+  width: 75%;
 }
 
 .connect-table td:last-child {
-  width: 30%;
+  width: 25%;
 }
 
 .connect-table td {
