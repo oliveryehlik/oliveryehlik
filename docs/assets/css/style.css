@@ -145,14 +145,22 @@ footer p {
 }
 
 .connect-table td {
-  padding: 12px 8px;
   width: 50%;
+  padding: 12px 8px;
   border-bottom: 1px solid #ccc;
   word-break: break-word;
-}
-
-.connect-table td:first-child {
-  width: 100px;
-  padding-right: 15px;
   vertical-align: middle;
 }
+
+/* Mobile: Stack items vertically */
+@media (max-width: 480px) {
+  .connect-table td {
+    display: block;
+    width: 100%;
+    padding: 6px 8px;
+  }
+
+  .connect-table td:first-child {
+    border-bottom: none;
+    font-weight: bold;
+  }
