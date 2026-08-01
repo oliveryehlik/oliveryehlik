@@ -147,7 +147,6 @@ footer p {
   margin: 0 auto;
 }
 
-/* 70/30 Column Ratio */
 .connect-table td:first-child {
   width: 70%;
 }
@@ -156,13 +155,11 @@ footer p {
   width: 30%;
 }
 
-/* Base Cell Styling */
 .connect-table td {
   padding: 12px 8px;
   border-bottom: 1px solid #ccc;
   word-break: break-word;
   vertical-align: middle;
-  text-align: center;
   box-sizing: border-box;
 }
 
@@ -181,7 +178,6 @@ footer p {
     display: block;
     width: 100%;
     padding: 6px 0;
-    text-align: center;
   }
 
   .connect-table td:first-child {
