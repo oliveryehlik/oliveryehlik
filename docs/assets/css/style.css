@@ -105,8 +105,9 @@ blockquote p {
 }
 
 /* Footer text box */
-footer {                      
-  text-align: center;                       
+footer {
+  text-align: center;
+  margin-top: 1rem;
 }
 
 /* Footer Paragraph Text */
