@@ -138,6 +138,42 @@ footer p {
   border-radius: 8px;
 }
 
+.doc-links {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.doc-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.45rem 0;
+}
+
+.doc-link a {
+  text-decoration: underline;
+}
+
+.doc-link time {
+  color: #666;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .doc-link {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .doc-link time {
+    font-size: 0.8rem;
+  }
+}
 
 .connect-list {
   list-style: none;
