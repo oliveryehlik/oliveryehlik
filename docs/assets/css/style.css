@@ -139,43 +139,76 @@ footer p {
 }
 
 
-/* Odd table things happening for contact info */
-.connect-table {
-  width: 100%;
-  max-width: 500px;
-  border-collapse: collapse;
-  table-layout: auto; /* Allows columns to dynamically adjust to text length */
-  margin: 0 auto;
+.connect-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+  display: grid;
+  gap: 0.75rem;
 }
 
-.connect-table td {
-  padding: 8px 6px; /* Tighter padding for desktop */
-  border-bottom: 1px solid #ccc;
-  vertical-align: middle;
-  box-sizing: border-box;
-  white-space: nowrap;
+.connect-item {
+  margin: 0;
 }
 
-/* Expands first column to take up remaining space */
-.connect-table td:first-child {
-  width: 100%;
+.connect-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
+  background: #ffffff;
+  border: 1px solid rgba(61, 61, 61, 0.12);
+  border-radius: 14px;
+  padding: 0.8rem 0.9rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
-/* Squeezes second column to fit its exact content width */
-.connect-table td:last-child {
-  width: 1%;
+.connect-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  border-color: rgba(206, 96, 59, 0.35);
 }
 
-/* Mobile: Keeps items side-by-side on a single line */
+.connect-card-static {
+  cursor: default;
+}
+
+.connect-label {
+  font-weight: 600;
+  color: var(--cerulean);
+  line-height: 1.3;
+}
+
+.connect-card:hover .connect-label {
+  color: var(--spicy-paprika);
+}
+
+.connect-card-static .connect-label {
+  color: #000000;
+  text-decoration: none;
+}
+
+.connect-meta {
+  color: #555;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  text-align: left;
+}
+
 @media (max-width: 480px) {
-  .connect-table,
-  .connect-table tbody,
-  .connect-table tr {
-    display: table;
-    width: 100%;
+  .connect-list {
+    gap: 0.6rem;
   }
 
-  .connect-table td {
-    padding: 6px 4px;
+  .connect-card {
+    padding: 0.7rem 0.8rem;
+    border-radius: 12px;
+  }
+
+  .connect-meta {
+    font-size: 0.8rem;
   }
 }
