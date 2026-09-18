@@ -1,86 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <!-- Basic page metadata and the two local resources used by the site. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A collection of PDFs, images, and other assets by Oliver Yehlik.">
+    <title>Assets / Oliver Yehlik</title>
+    <link rel="icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <main>
+      <!-- Introductory content shown above the file index. -->
+      <header class="masthead">
+        <p class="kicker">Oliver Yehlik</p>
+        <h1>Assorted creativity<br><em>&amp; curiosities.</em></h1>
+        <p class="lede">An index of writing, collages, and other creative works.</p>
+      </header>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Oliver Yehlik</title>
-  <link rel="icon" type="image/png" href="assets/images/favicon.png">
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-  
-<body>
-  
-  <header>
-    <nav class="site-nav" aria-label="Primary">
-      <a href="/" class="active" aria-current="page">Home</a>
-      <a href="/studio/">Studio</a>
-    </nav>
-  </header>
+      <!-- Add new files by copying an asset-row and updating its title, type, and href. -->
+      <div class="library">
+        <section class="collection" aria-labelledby="index-title">
+          <div class="section-heading">
+            <h2 id="index-title">Index</h2>
+          </div>
+          <a class="asset-row" href="assets/files/clearday.pdf" target="_blank" rel="noopener noreferrer">
+            <span class="asset-name">On a clear day, you can see yourself.</span>
+            <span class="asset-meta"><span>PDF</span><time datetime="2026-08-18">18 Aug 2026</time><span class="arrow" aria-hidden="true">&#8599;</span></span>
+          </a>
+         
+          <!--
+            Copy this asset-row when adding a new file:
+            - Update href with the file's path.
+            - Replace the title and file type.
+            - Keep the time element when the file has a date.
+          
+          <a class="asset-row" href="assets/files/your-file.pdf" target="_blank" rel="noopener noreferrer">
+            <span class="asset-name">Your file title</span>
+            <span class="asset-meta"><span>PDF</span><time datetime="2026-09-17">17 Sep 2026</time><span class="arrow" aria-hidden="true">&#8599;</span></span>
+          </a>
+          -->
+        </section>
+      </div>
 
-  <main>
-  
-  <h1>Oliver Yehlik</h1>
-    
-    <p>Oliver creates from a place of impatience (sometimes) and curiosity (always). He loves spending time in and traversing many communities, listening to and sharing stories along the way. </p>
-
-    <figure class="image-wrapper">
-    <img 
-      src="assets/images/olivermoroccosquare.webp" 
-      alt="A portrait of the site creator, standing on one leg on the beach." 
-      width="800" 
-      height="800" 
-      loading="lazy"
-      >
-    </figure>
-  
-  <h2>Highlights</h2>
-
-    <ul class="card-list doc-links">
-      <li class="card-item">
-        <a class="card card-link" href="/assets/files/clearday.pdf" target="_blank" rel="noopener noreferrer">
-          <span class="card-label">On a clear day, you can see yourself. (pdf)</span>
-          <span class="card-meta"><time datetime="2026-08-18">Aug 18, 2026</time></span>
-        </a>
-      </li>
-    </ul>
-
-  <h2>Connect</h2>
-
-    <p>I'm glad you visited my site! I'd be happy to hear from you. Online, email is the best way to reach me. Offline, I appreciate penpals and phone calls so we might chat that way too.</p>
-
-    <ul class="card-list">
-      <li class="card-item card-email-item">
-        <div class="card card-static">
-          <span class="card-label">oryehlik at gmail dot com</span>
-          <span class="card-meta">send me mail</span>
-        </div>
-      </li>
-      <li class="card-item">
-        <a class="card" href="https://www.linkedin.com/in/oliver-yehlik/" target="_blank" rel="noopener">
-          <span class="card-label">LinkedIn</span>
-          <span class="card-meta">my digital resume</span>
-        </a>
-      </li>
-      <li class="card-item">
-        <a class="card" href="https://www.last.fm/user/oliveryehlik" target="_blank" rel="noopener">
-          <span class="card-label">last.fm</span>
-          <span class="card-meta">see my scrobbles</span>
-        </a>
-      </li>
-      <li class="card-item">
-        <a class="card" href="https://app.thestorygraph.com/profile/oliveryehlik" target="_blank" rel="noopener">
-          <span class="card-label">StoryGraph</span>
-          <span class="card-meta">my reading list</span>
-        </a>
-      </li>
-    </ul>
-  
-  </main>
-    
-   <footer>
-    <p>&copy; 2026 Oliver Yehlik. All rights reserved.</p>
-   </footer>
-
-</body>
+      <!-- This stays at the bottom of the page because main uses flex layout. -->
+      <footer>
+        <span>&copy; 2026 Oliver Yehlik</span>
+        <span>Last updated September 2026</span>
+      </footer>
+    </main>
+  </body>
 </html>

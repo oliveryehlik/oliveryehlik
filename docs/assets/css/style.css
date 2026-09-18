@@ -1,238 +1,184 @@
-/* Color Palette */
 :root {
-  --spicy-paprika: #CE603B;     /* Title and header color */
-  --white-smoke: #f5f5f5;
-  --gunmetal: #3d3d3d;
-  --cerulean: #086788;          /* Links */
+  /* Change these values to update the site's overall color palette. */
+  --paper: #f4f0e8;
+  --ink: #172b2f;
+  --muted: #6f7771;
+  --accent: #e15b3d;
+  --line: #c9c7bc;
+  --highlight: #d8e5dc;
 }
 
-/* Navigation Styling */
-.site-nav {
-  display: flex;
-  gap: 1.5rem;
-  padding: 1rem 0;
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 2rem;
+* {
+  box-sizing: border-box;
 }
 
-.site-nav a {
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.site-nav a.active {
-  font-weight: bold;
-  border-bottom: 2px solid #000000;
-}
-
-/* Main Body */
-main {
-  margin-bottom: 4rem;
-}
-
-/* Base Styles */
+/* Base page sizing, colors, and the device-default font. */
 body {
-  font-family: system-ui, -apple-system, sans-serif;
-  line-height: 1.6;
-  margin: 0 auto;
-  max-width: 600px;
-  padding: 1.5rem;
-  background-color: var(--white-smoke);
-  color: #000000;
+  margin: 0;
+  padding: 0 2rem;
+  background: var(--paper);
+  color: var(--ink);
+  font: 1rem/1.5 system-ui, sans-serif;
 }
 
-/* Headings */
+main {
+  max-width: 1040px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 3.5rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Shared heading defaults and display type sizes. */
+h1,
+h2,
+p {
+  margin: 0;
+}
+
 h1 {
-  font-size: clamp(2rem, 5vw + 1rem, 3.5rem);
-  line-height: 1.2;
-  color: var(--spicy-paprika);
+  color: var(--accent);
+  font: 600 clamp(3.25rem, 8vw, 7.5rem)/0.88 system-ui, sans-serif;
+  letter-spacing: -0.06em;
 }
 
 h2 {
-  font-size: clamp(1.4rem, 3vw + 0.8rem, 2rem);
-  color: #000000;
+  font: 600 2rem/1 system-ui, sans-serif;
+  letter-spacing: -0.04em;
 }
 
-/* Body */
-p, li, td {
-  font-size: clamp(1rem, 1vw + 0.8rem, 1.2rem);
-  color: #000000;
+.masthead {
+  padding-bottom: 6rem;
+  border-bottom: 1px solid var(--line);
 }
 
-/* Links */
-a {
-  font-size: clamp(1rem, 1vw + 0.8rem, 1.2rem);
-  color: var(--cerulean);
-  text-decoration: underline;
-  transition: color 0.2s ease;
-}
-
-a:hover {
-  color: var(--spicy-paprika);
-}
-
-/* Blockquotes */
-blockquote {
-  background-color: var(--gunmetal); /* Background color behind text */
-  font-size: clamp(1rem, 1vw + 0.8rem, 1.2rem);
-  border-radius: 8px;                      /* Simple rounded corners */
-  padding: 1rem 1.25rem;                   /* Inner spacing around text */
-  margin: 1rem 0;                          /* Outer spacing top/bottom */
-  color: #ffffff;
-  font-style: normal;
-}
-
-blockquote cite {
-  display: block;
-  margin-top: 0.5rem;
-  font-size: 0.875rem;
-  font-style: normal;
-  color: #ffffff
-}
-
-blockquote cite a {
-  color: #ffffff;        
-  text-decoration: none; 
-}
-
-blockquote cite a:hover {
-  text-decoration: underline;
-  color: var(--spicy-paprika);
-}
-
-blockquote p {
-  color: #ffffff;
-}
-
-/* Footer text box */
+/* Small labels and metadata use the same quiet visual treatment. */
+.kicker,
+.asset-meta,
 footer {
-  text-align: center;
-  margin-top: 1rem;
+  color: var(--muted);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
-/* Footer Paragraph Text */
-footer p {
-  color: #000000;
-  margin: 0;
+.kicker {
+  margin-bottom: 2.5rem;
+  color: var(--ink);
+  font-weight: bold;
 }
 
-/* Container for centered, fixed-width images */
-.image-wrapper {
-  max-width: 500px;   
-  margin: 1.5rem auto;
+.lede {
+  max-width: 27rem;
+  margin-top: 2rem;
+  color: var(--muted);
+  font-size: 1.15rem;
 }
 
-/* Image inside the wrapper */
-.image-wrapper img {
-  width: 100%;        
-  height: auto;     
-  display: block;    
-  border-radius: 8px;
+.library {
+  /* The library is intentionally one continuous column of links. */
+  padding: 3rem 0 6rem;
 }
 
-/* Standalone image style */
-.responsive-img {
-  max-width: 100%;    
-  height: auto;       
-  display: block;    
-  border-radius: 8px;
-}
-
-.doc-links {
-  list-style: none;
-  padding: 0;
-  margin: 1.5rem 0 0;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.75rem;
-  width: 100%;
-}
-
-.card-list {
-  list-style: none;
-  padding: 0;
-  margin: 1.5rem 0 0;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.75rem;
-  width: 100%;
-}
-
-.card-item {
-  margin: 0;
-  width: 100%;
-}
-
-.card {
+.section-heading {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.2rem;
-  width: 100%;
-  box-sizing: border-box;
-  background: #ffffff;
-  border: 1px solid rgba(61, 61, 61, 0.12);
-  border-radius: 14px;
-  padding: 0.8rem 0.9rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-  color: inherit;
-  text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
 }
 
-.card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
-  border-color: rgba(206, 96, 59, 0.35);
-}
-
-.card-static {
-  cursor: default;
-}
-
-.card-label {
-  font-weight: 600;
-  color: var(--cerulean);
-  line-height: 1.3;
-}
-
-.card:hover .card-label {
-  color: var(--spicy-paprika);
-}
-
-.card-static .card-label {
-  color: #000000;
+.asset-row {
+  /* Each file or destination is one full-width clickable row. */
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 1.1rem 0;
+  border-top: 1px solid var(--line);
+  color: var(--ink);
   text-decoration: none;
 }
 
-.card-meta {
-  color: #555;
-  font-size: 0.85rem;
-  line-height: 1.4;
-  text-align: left;
+.asset-row:last-child {
+  border-bottom: 1px solid var(--line);
 }
 
-.card-link {
-  width: 100%;
+.asset-name {
+  font: 1.15rem/1.2 system-ui, sans-serif;
 }
 
-.card-link .card-meta {
-  color: #666;
+.asset-meta {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  white-space: nowrap;
 }
 
-@media (max-width: 480px) {
-  .doc-links,
-  .card-list {
-    grid-template-columns: 1fr;
-    gap: 0.6rem;
+.arrow {
+  color: var(--accent);
+  font-size: 1.25rem;
+  line-height: 0;
+}
+
+.asset-row:hover {
+  color: var(--accent);
+  background: var(--highlight);
+}
+
+/* The footer is pushed down by main's flex layout. */
+footer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+/* Stack row metadata below the title on narrow screens. */
+@media (max-width: 520px) {
+  body {
+    padding: 0 1.25rem;
   }
 
-  .card {
-    padding: 0.7rem 0.8rem;
-    border-radius: 12px;
+  main {
+    padding-top: 2rem;
   }
 
-  .card-meta {
-    font-size: 0.8rem;
+  .masthead {
+    padding-bottom: 4rem;
+  }
+
+  h1 {
+    font-size: clamp(3.1rem, 16vw, 5rem);
+  }
+
+  .library {
+    padding-bottom: 4rem;
+  }
+
+  .asset-row {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .asset-meta {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .asset-meta time::before {
+    content: "·";
+    margin: 0 0.5rem;
+  }
+
+  .asset-meta .arrow {
+    margin-left: auto;
+  }
+
+  footer {
+    flex-direction: column;
   }
 }
