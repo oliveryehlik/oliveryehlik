@@ -79,7 +79,7 @@ footer {
 
 .portrait {
   display: block;
-  width: clamp(18rem, 32vw, 24rem);
+  width: clamp(14rem, 24vw, 18rem);
   max-width: 100%;
   height: auto;
   aspect-ratio: 1;
