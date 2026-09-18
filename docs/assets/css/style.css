@@ -91,8 +91,8 @@ footer {
 .asset-row {
   /* Each file or destination is one full-width clickable row. */
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: stretch;
   gap: 1rem;
   padding: 1.1rem 0;
   border-top: 1px solid var(--line);
@@ -109,11 +109,21 @@ footer {
 }
 
 .asset-meta {
-  flex: 0 0 auto;
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 0.75rem;
   white-space: nowrap;
+}
+
+.asset-meta time::before {
+  content: "·";
+  margin: 0 0.5rem;
+}
+
+.asset-meta .arrow {
+  margin-left: auto;
 }
 
 .arrow {
@@ -153,29 +163,11 @@ footer {
 
   h1 {
     font-size: clamp(3.1rem, 16vw, 5rem);
+    line-height: 0.98;
   }
 
   .library {
     padding-bottom: 4rem;
-  }
-
-  .asset-row {
-    flex-direction: column;
-    gap: 0.25rem;
-  }
-
-  .asset-meta {
-    width: 100%;
-    justify-content: flex-start;
-  }
-
-  .asset-meta time::before {
-    content: "·";
-    margin: 0 0.5rem;
-  }
-
-  .asset-meta .arrow {
-    margin-left: auto;
   }
 
   footer {
