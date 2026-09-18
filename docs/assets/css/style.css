@@ -39,7 +39,7 @@ p {
 
 h1 {
   color: var(--accent);
-  font: 600 clamp(3.25rem, 6vw, 6rem)/0.88 system-ui, sans-serif;
+  font: 600 clamp(3.25rem, 6vw, 5rem)/1.1 system-ui, sans-serif;
   letter-spacing: -0.06em;
 }
 
@@ -73,8 +73,8 @@ footer {
   max-width: 27rem;
   margin-top: 2rem;
   color: var(--muted);
-  font-size: 1.25rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .portrait {
@@ -189,8 +189,8 @@ footer {
   }
 
   h1 {
-    font-size: clamp(3.1rem, 16vw, 5rem);
-    line-height: 0.98;
+    font-size: clamp(2.25rem, 10vw, 3rem);
+    line-height: 1.1;
   }
 
   .library {
@@ -199,5 +199,17 @@ footer {
 
   footer {
     flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 800px) {
+  h1 {
+    font-size: 2rem;
   }
 }
