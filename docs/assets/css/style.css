@@ -39,7 +39,7 @@ p {
 
 h1 {
   color: var(--accent);
-  font: 600 clamp(3.25rem, 8vw, 7.5rem)/0.88 system-ui, sans-serif;
+  font: 600 clamp(3.25rem, 6vw, 6rem)/0.88 system-ui, sans-serif;
   letter-spacing: -0.06em;
 }
 
@@ -73,7 +73,8 @@ footer {
   max-width: 27rem;
   margin-top: 2rem;
   color: var(--muted);
-  font-size: 1.15rem;
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
 .portrait {
