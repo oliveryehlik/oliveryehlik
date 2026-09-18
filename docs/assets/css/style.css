@@ -78,7 +78,9 @@ footer {
 
 .portrait {
   display: block;
-  width: min(100%, 18rem);
+  width: clamp(18rem, 32vw, 24rem);
+  max-width: 100%;
+  height: auto;
   aspect-ratio: 1;
   margin-top: 2.5rem;
   border-radius: 8px;
@@ -149,7 +151,7 @@ footer {
 /* The footer is pushed down by main's flex layout. */
 footer {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   gap: 1rem;
   margin-top: auto;
   padding-top: 1.5rem;
