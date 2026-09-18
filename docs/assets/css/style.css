@@ -76,6 +76,15 @@ footer {
   font-size: 1.15rem;
 }
 
+.portrait {
+  display: block;
+  width: min(100%, 18rem);
+  aspect-ratio: 1;
+  margin-top: 2.5rem;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
 .library {
   /* The library is intentionally one continuous column of links. */
   padding: 3rem 0 6rem;
@@ -143,7 +152,7 @@ footer {
   justify-content: flex-start;
   gap: 1rem;
   margin-top: auto;
-  padding-top: 1rem;
+  padding-top: 1.5rem;
   border-top: 1px solid var(--line);
 }
 
