@@ -24,7 +24,7 @@ body {
 
 /* Center the page and keep its reading width manageable. */
 main {
-  max-width: 48rem;
+  max-width: 35rem;
   min-height: 100vh;
   margin: 0 auto;
   padding: 3rem 2rem 1.5rem;
