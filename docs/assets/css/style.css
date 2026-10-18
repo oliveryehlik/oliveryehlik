@@ -1,203 +1,118 @@
+/* Colors used across the page. */
 :root {
-  /* Change these values to update the site's overall color palette. */
-  --paper: #ffffff;
-  --ink: #172b2f;
+  --white: #ffffff;
+  --deep-teal: #172b2f;
   --muted: #6f7771;
   --accent: #e15b3d;
-  --line: #c9c7bc;
-  --highlight: #d8e5dc;
+  --side: #f1f5ef;
 }
 
+/* Include padding and borders in an element's set width. */
 * {
   box-sizing: border-box;
 }
 
-/* Base page sizing, colors, and the device-default font. */
+/* The warm background shows in the margins around the white page. */
 body {
   margin: 0;
-  padding: 0 2rem;
-  background: var(--paper);
-  color: var(--ink);
-  font: 1rem/1.5 system-ui, sans-serif;
+  padding: 0 1rem;
+  background: var(--side);
+  color: var(--deep-teal);
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
 }
 
+/* Center the page and keep its reading width manageable. */
 main {
-  max-width: 900px;
+  max-width: 48rem;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 3.5rem 0 2rem;
+  padding: 3rem 2rem 1.5rem;
+  background: var(--white);
   display: flex;
   flex-direction: column;
 }
 
-/* Shared heading defaults and display type sizes. */
-h1,
-h2,
-p {
+/* Space the introduction from the library. */
+header {
+  padding-bottom: 3rem;
+}
+
+/* Use orange for the main heading. */
+h1 {
+  color: var(--accent);
+}
+
+/* Keep footer text quiet. */
+footer {
+  color: var(--muted);
+  font-size: 0.8rem;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+/* Library links use the normal text color. */
+a {
+  color: var(--deep-teal);
+}
+
+/* Keep the portrait below the header text and limit its size. */
+header img {
+  display: block;
+  width: min(100%, 18rem);
+  height: auto;
+  margin-top: 1.5rem;
+}
+
+/* Add space around the library section. */
+section {
+  padding: 2rem 0;
+}
+
+/* Leave a little room below the section heading. */
+h2 {
+  margin-top: 0;
+}
+
+/* Separate each library entry with whitespace, not divider lines. */
+section p {
+  margin: 2rem 0;
+}
+
+/* Make file details secondary to each link. */
+small {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+section a {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+footer p {
   margin: 0;
 }
 
-h1 {
-  color: var(--accent);
-  font: 600 clamp(2.5rem, 4vw, 4rem)/1.05 system-ui, sans-serif;
-  letter-spacing: -0.06em;
-}
-
-h2 {
-  font: 600 2rem/1 system-ui, sans-serif;
-  letter-spacing: -0.04em;
-}
-
-.masthead {
-  padding-bottom: 6rem;
-  border-bottom: 1px solid var(--line);
-}
-
-/* Small labels and metadata use the same quiet visual treatment. */
-.kicker,
-.asset-meta,
-footer {
-  color: var(--muted);
-  font-size: 0.75rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.kicker {
-  margin-bottom: 2.5rem;
-  color: var(--ink);
-  font-weight: bold;
-}
-
-.lede {
-  max-width: 27rem;
-  margin-top: 2rem;
-  color: var(--muted);
-  font-size: 1rem;
-  font-weight: 400;
-}
-
-.portrait {
-  display: block;
-  width: clamp(14rem, 24vw, 18rem);
-  max-width: 100%;
-  height: auto;
-  aspect-ratio: 1;
-  margin-top: 2.5rem;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
-@media (min-width: 768px) {
-  .masthead {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(18rem, 24rem);
-    column-gap: 4rem;
-  }
-
-  .portrait {
-    grid-column: 2;
-    grid-row: 1 / span 2;
-    align-self: center;
-    margin-top: 0;
+/* Give the portrait a little more room on wider screens. */
+@media (min-width: 601px) {
+  header img {
+    width: min(100%, 20rem);
   }
 }
 
-.library {
-  /* The library is intentionally one continuous column of links. */
-  padding: 3rem 0 6rem;
-}
-
-.section-heading {
-  display: flex;
-  align-items: baseline;
-  gap: 1rem;
-  margin-bottom: 1.25rem;
-}
-
-.asset-row {
-  /* Each file or destination is one full-width clickable row. */
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  gap: 1rem;
-  padding: 1.1rem 0;
-  border-top: 1px solid var(--line);
-  color: var(--ink);
-  text-decoration: none;
-}
-
-.asset-row:last-child {
-  border-bottom: 1px solid var(--line);
-}
-
-.asset-name {
-  font: 1.15rem/1.2 system-ui, sans-serif;
-}
-
-.asset-meta {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 0.75rem;
-  white-space: nowrap;
-}
-
-.asset-meta time::before {
-  content: "·";
-  margin: 0 0.5rem;
-}
-
-.asset-meta .arrow {
-  margin-left: auto;
-}
-
-.arrow {
-  color: var(--accent);
-  font-size: 1.25rem;
-  line-height: 0;
-}
-
-.asset-row:hover {
-  color: var(--accent);
-  background: var(--highlight);
-}
-
-/* The footer is pushed down by main's flex layout. */
-footer {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-top: auto;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--line);
-}
-
-/* Stack row metadata below the title on narrow screens. */
-@media (max-width: 520px) {
+/* Use the full white background and tighter spacing on phones. */
+@media (max-width: 600px) {
   body {
-    padding: 0 1.25rem;
+    background: var(--white);
   }
 
   main {
-    padding-top: 2rem;
+    padding: 1.5rem 1rem;
   }
 
-  .masthead {
-    padding-bottom: 4rem;
-  }
-
-  h1 {
-    font-size: clamp(2.25rem, 10vw, 2.75rem);
-  }
-
-  .library {
-    padding-bottom: 4rem;
-  }
-
-  footer {
-    flex-direction: column;
+  header {
+    padding-bottom: 2rem;
   }
 }
 
