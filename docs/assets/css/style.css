@@ -4,7 +4,7 @@
   --deep-teal: #172b2f;
   --muted: #6f7771;
   --accent: #e15b3d;
-  --side: #f1f5ef;
+  --side: #f4f2ed;
 }
 
 /* Include padding and borders in an element's set width. */
@@ -56,12 +56,14 @@ a {
   color: var(--deep-teal);
 }
 
-/* Keep the portrait below the header text and limit its size. */
+/* Show the full wide photo below the header text. */
 header img {
   display: block;
-  width: min(100%, 18rem);
+  width: 100%;
+  max-width: 32rem;
   height: auto;
   margin-top: 1.5rem;
+  border-radius: 8px;
 }
 
 /* Add space around the library section. */
@@ -92,13 +94,6 @@ section a {
 
 footer p {
   margin: 0;
-}
-
-/* Give the portrait a little more room on wider screens. */
-@media (min-width: 601px) {
-  header img {
-    width: min(100%, 20rem);
-  }
 }
 
 /* Use the full white background and tighter spacing on phones. */
