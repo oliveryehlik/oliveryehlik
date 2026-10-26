@@ -1,4 +1,4 @@
-/* Colors used across the page. */
+/* PAGE DEFAULTS */
 :root {
   --white: #ffffff;
   --deep-teal: #172b2f;
@@ -7,12 +7,10 @@
   --side: #ffffff;
 }
 
-/* Include padding and borders in an element's set width. */
 * {
   box-sizing: border-box;
 }
 
-/* The warm background shows in the margins around the white page. */
 body {
   margin: 0;
   padding: 0 1rem;
@@ -22,7 +20,6 @@ body {
   line-height: 1.5;
 }
 
-/* Center the page and keep its reading width manageable. */
 main {
   max-width: 40rem;
   min-height: 100vh;
@@ -33,30 +30,29 @@ main {
   flex-direction: column;
 }
 
-/* Space the introduction from the library. */
+/* INTRODUCTION */
+
 header {
   padding-bottom: 3rem;
 }
 
-/* Use orange for the main heading. */
 h1 {
   color: var(--accent);
 }
 
-/* Keep footer text quiet. */
-footer {
-  color: var(--muted);
-  font-size: 0.8rem;
-  margin-top: auto;
-  padding-top: 1rem;
+header h1 {
+  margin-bottom: 0.5rem;
 }
 
-/* Library links use the normal text color. */
-a {
-  color: var(--deep-teal);
+.basic-box {
+  width: 100%;
+  max-width: 32rem;
+  height: auto;
+  border: 0px;
+  background-color: #ffffff;
+  padding: 2rem;
 }
 
-/* Show the full wide photo below the header text. */
 header img {
   display: block;
   width: 100%;
@@ -66,34 +62,22 @@ header img {
   border-radius: 8px;
 }
 
-basic-box {
-  width: 100%;
-  max-width: 32rem;
-  height: auto;
-  border: 0px;
-  background-color: #ffffff;
-  padding: 2rem;
-}
+/* PROJECTS */
 
-/* Add space around the library section. */
 section {
   padding: 2rem 0;
 }
 
-/* Leave a little room below the section heading. */
 h2 {
   margin-top: 0;
 }
 
-/* Separate each library entry with whitespace, not divider lines. */
 section p {
   margin: 2rem 0;
 }
 
-/* Make file details secondary to each link. */
-small {
-  color: var(--muted);
-  font-size: 0.85rem;
+a {
+  color: var(--deep-teal);
 }
 
 section a {
@@ -101,11 +85,26 @@ section a {
   font-weight: 600;
 }
 
+small {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+/* FOOTER */
+
+footer {
+  color: var(--muted);
+  font-size: 0.8rem;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
 footer p {
   margin: 0;
 }
 
-/* Use the full white background and tighter spacing on phones. */
+/* SMALL SCREENS */
+
 @media (max-width: 600px) {
   body {
     background: var(--white);
@@ -119,4 +118,3 @@ footer p {
     padding-bottom: 2rem;
   }
 }
-
