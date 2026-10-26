@@ -68,6 +68,7 @@ header img {
 
 basic-box {
   width: 100%;
+  max-width: 32rem;
   height: auto;
   border: 0px;
   background-color: #ffffff;
